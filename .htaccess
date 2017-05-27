@@ -1,0 +1,19 @@
+# SEGURANÇA
+RewriteRule ^config/(.*)?$ - [F]
+RewriteRule ^git/(.*)?$ - [F]
+RewriteRule ^make - [F]
+RewriteRule ^todo - [F]
+RewriteRule ^vendor/(.*)?$ - [F]
+RewriteRule ^view/(.*)?$ - [F]
+RewriteRule ^(autoload|blog|bootstrap|cli-config|database|GeoLite2-City|README|composer|bower)\.(dat|gz|json|lock|md|mmdb|php|sql)$ - [F]
+
+# TELAS DE ERRO
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+ErrorDocument 503 /404.php
+
+# POSTS
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)/([^/]*)$ /post.php?category=$1&post=$2 [L]

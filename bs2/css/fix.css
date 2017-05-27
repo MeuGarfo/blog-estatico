@@ -1,0 +1,48 @@
+body{
+        margin-top: 50px;
+}
+html{
+        overflow-y: scroll;
+}
+/*.dropdown-menu{
+        width: 570px;
+}
+.dropdown-menu > li > a{
+        text-align: left;
+        word-wrap: break-word;
+        white-space: normal;
+}*/
+.hide{
+	display:none;
+}
+.text-right{
+	text-align:right;
+}
+
+input[readonly]{
+	background-color:transparent;
+	cursor:text;
+}
+
+/*
+texto branco com sombra
+h1.title a{
+    color:white;
+    text-shadow:rgba(0, 0, 0, 0.8) 0px 0px 3px;
+}*/
+/*body > .navbar {
+        font-size: 13px;
+}*/
+
+@media (max-width: 979px) {
+        /*menor que o desktop*/
+        body{
+                margin-top: 0px;
+        }
+        /*.dropdown-menu{
+                width: calc(100% - 40px);
+        }*/    
+        /*h1.title{
+            text-align:center;
+        }*/  
+}
