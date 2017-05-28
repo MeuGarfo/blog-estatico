@@ -12,7 +12,7 @@ body {
     color:#999;
 }
 .navbar-inner{
-    background-color:#fafafa;
+    background-color:white;
     background-image:none;
     border: 1px solid #ddd;
 }
