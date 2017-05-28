@@ -16,4 +16,5 @@ ErrorDocument 503 /404.php
 # POSTS
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)$ /post.php?category=$1&post=$2&id=$3 [L]
 RewriteRule ^([^/]*)/([^/]*)$ /post.php?category=$1&post=$2 [L]

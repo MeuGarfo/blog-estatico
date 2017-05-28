@@ -19,15 +19,21 @@
             unset($posts[$key]);
             $value=str_replace('.md', '', $value);
             $posts[$key]['title']=$value;
-            $posts[$key]['href']='/'.$title.'/'.slug($value);
+            $posts[$key]['href']=removeID(slug($value));
+            if($category=='blog'){
+                $posts[$key]['href']='/blog/'.$posts[$key]['href'];
+            }
+            $posts[$key]['category']=$title;
+            $posts[$key]['filename']=$title.'/'.slug($value,false);
         }
         foreach ($posts as $post) {
+            //print loop
+            $id=id($post['title']);
             $title=removeID($post['title']);
-            $filename=slug($post['href'],false);
-            $created_at=extractTime($filename);
+            $created_at=extractTime($post['filename']);
             $created_at=@date("dMY",$created_at);
             $created_at='<small class="pull-right visible-desktop gray">'.$created_at.'</small>';
-            print '<li><a href="'.$post['href'].'">'.$title.$created_at.'</a></li>';
+            print '<li><a href="'.$post['href'].'/'.$id.'">'.$title.$created_at.'</a></li>';
         }
         ?>
     </ul>

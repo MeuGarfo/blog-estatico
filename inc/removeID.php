@@ -6,4 +6,11 @@ function removeID($text){
     }
     return trim(implode('.',$text));
 }
+function id($text){
+    $text=explode('.',$text);
+    $id=$text[0];;
+    if(is_numeric($id)){
+        return $id;
+    }
+}
 ?>

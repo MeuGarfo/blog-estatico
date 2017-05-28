@@ -4,6 +4,7 @@ function category($category){
     $posts=files($category);
     $data['title']=$category;
     $data['posts']=$posts;
+    $data['category']=$category;
     view('category',$data);
 }
 
