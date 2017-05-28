@@ -4,7 +4,7 @@ return [
     // 'ferramentas',
     'blog',
     // 'notícias',
-    'PHP',
+    // 'PHP',
     // 'ubuntu'
 ];
 ?>
