@@ -3,7 +3,7 @@
     <ul class="nav nav-tabs nav-stacked">
         <li>
             <a href="https://facebook.com/HackerGaucho" target="_blank">
-                Facebook
+                Facebook (Página)
             </a>
         </li>
         <li>
