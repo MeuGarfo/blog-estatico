@@ -2,13 +2,13 @@
     <h3>Redes sociais</h3>
     <ul class="nav nav-tabs nav-stacked">
         <li>
-            <a href="https://facebook.com/HackerGaucho" target="_blank">
-                Facebook (Página)
+            <a href="https://facebook.com/hackergaucho" target="_blank">
+                Facebook
             </a>
         </li>
         <li>
-            <a href="https://facebook.com/groups/HackerGaucho" target="_blank">
-                Facebook (Grupo)
+            <a href="https://facebook.com/groups/hackergaucho" target="_blank">
+                Facebook (grupo)
             </a>
         </li>
     </ul>
