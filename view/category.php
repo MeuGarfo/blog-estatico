@@ -11,7 +11,7 @@
     <?php view('inc/logo'); ?>
     <h1><?php print @$categoryHTML; ?></h1>
     <p>
-        <input class="span6" type="text" id="buscaDePost" onkeyup="filtrarPosts()" placeholder="Filtrar posts.." title="Type in a name">
+        <input class="span12" type="text" id="buscaDePost" onkeyup="filtrarPosts()" placeholder="Filtrar posts.." title="Type in a name">
     </p>
     <ul class="nav nav-tabs nav-stacked" id="posts">
         <?php
@@ -26,7 +26,7 @@
             $filename=slug($post['href'],false);
             $created_at=extractTime($filename);
             $created_at=@date("dMY",$created_at);
-            $created_at='<small class="pull-right" style="color:#333">'.$created_at.'</small>';
+            $created_at='<small class="pull-right visible-desktop gray">'.$created_at.'</small>';
             print '<li><a href="'.$post['href'].'">'.$title.$created_at.'</a></li>';
         }
         ?>

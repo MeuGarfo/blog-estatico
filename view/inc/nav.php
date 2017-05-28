@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container-fluid">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -13,12 +13,14 @@
                     $categories=categories();
                     foreach ($categories as $key=>$value) {
                         $html=ucfirst($value);
-                        if($value==$category){
-                            print '<li class="active">';
-                            print '<a href="/'.$value.'">'.$html.'</a></li>';
-                        }else{
-                            print '<li>';
-                            print '<a href="/'.$value.'">'.$html.'</a></li>';
+                        if($html<>"Blog"){
+                            if($value==$category){
+                                print '<li class="active">';
+                                print '<a href="/'.$value.'">'.$html.'</a></li>';
+                            }else{
+                                print '<li>';
+                                print '<a href="/'.$value.'">'.$html.'</a></li>';
+                            }    
                         }
                     }
                     ?>
