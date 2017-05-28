@@ -12,8 +12,12 @@ body {
     color:#999;
 }
 .navbar-inner{
-    background-color:white;
+    background-color:#fafafa;
     background-image:none;
+    border: 1px solid #ddd;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{
+    box-shadow: none;
 }
 #title{
     margin-top:-5px;
