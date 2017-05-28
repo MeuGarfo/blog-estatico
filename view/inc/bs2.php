@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="https://hackergaucho.com/img/logo.png">
 <link href="/bs2/css/bootstrap.css" rel="stylesheet">
 <style>
 body {
