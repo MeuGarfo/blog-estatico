@@ -24,8 +24,8 @@
                 $value=str_replace('.md', '', $value);
                 $posts[$key]['title']=$value;
                 $posts[$key]['href']=removeID(slug($value));
-                if($category=='blog'){
-                    $posts[$key]['href']='/blog/'.$posts[$key]['href'];
+                if($category==DEFAULT_CATEGORY){
+                    $posts[$key]['href']='/'.DEFAULT_CATEGORY.'/'.$posts[$key]['href'];
                 }
                 $posts[$key]['category']=$title;
                 $posts[$key]['filename']=$title.'/'.slug($value,false);

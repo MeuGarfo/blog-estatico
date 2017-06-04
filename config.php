@@ -1,4 +1,5 @@
 <?php
+define("DEFAULT_CATEGORY",'back-end');
 define('ROOT',__DIR__.'/');
 define("SITE_NAME",'Hacker Gaucho');
 require_once(ROOT.'vendor/autoload.php');
