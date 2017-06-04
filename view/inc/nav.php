@@ -9,7 +9,6 @@
             <a class="brand" href="/"><?php print SITE_NAME; ?></a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li><a href="/">Principal</a></li>
                     <?php
                     $categories=categories();
                     foreach ($categories as $key=>$value) {
