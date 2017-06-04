@@ -3,7 +3,12 @@ require_once('config.php');
 $data['category']=@$_GET['category'];
 $data['title']=@slug($_GET['post'],false);
 $id=@$_GET['id'];
-$filename=ROOT.$data['category'].'/'.$id.'.'.$data['title'].'.md';
+$filename=$data['category'].'/'.$id.'.'.$data['title'].'.md';
+$rewrite=require_once(ROOT.'rewrite.php');
+if(isset($rewrite[$filename])){
+    $filename=$rewrite[$filename];
+}
+$filename=ROOT.$filename;
 if(file_exists($filename)){
     $content=file_get_contents($filename);
     $content=explode(PHP_EOL,$content);

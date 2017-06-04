@@ -1,6 +1,6 @@
 # SEGURANÇA
 RewriteRule ^config/(.*)?$ - [F]
-RewriteRule ^git/(.*)?$ - [F]
+RewriteRule ^.git/(.*)?$ - [F]
 RewriteRule ^make - [F]
 RewriteRule ^todo - [F]
 RewriteRule ^vendor/(.*)?$ - [F]

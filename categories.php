@@ -5,6 +5,7 @@ return [
     'back-end',
     'blog',
     'front-end',
+    'git'
     // 'notícias',
     // 'PHP',
     // 'ubuntu'
