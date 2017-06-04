@@ -7,6 +7,6 @@ return [
     /*front-end*/
     'blog/3.Manipulando pixels no HTML5 canvas.md'=>'1.Manipulando pixels no HTML5 canvas.md',
     /*git*/
-    'blog/2.Como remover tags do Github.md'=>'git/1.Como remover tags do Github.md'
+    'blog/2.Como remover tags do Github.md'=>'terminal/1.Como remover tags do Github.md'
 ];
 ?>

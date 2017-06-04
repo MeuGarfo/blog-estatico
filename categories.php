@@ -1,9 +1,9 @@
 <?php
 return [
     'back-end',
+    'design',
     'front-end',
-    'git',
+    'terminal',
     // 'PHP',
-    'ux'
 ];
 ?>

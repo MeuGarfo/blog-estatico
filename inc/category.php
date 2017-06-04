@@ -2,9 +2,6 @@
 function category($category){
     require_once('./config.php');
     $posts=files($category);
-    if($category=='ux'){
-        $category='UX';
-    }
     $data['title']=$category;
     $data['posts']=$posts;
     $data['category']=$category;
