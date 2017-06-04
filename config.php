@@ -17,4 +17,9 @@ inc([
     'slug',
     'view'
 ]);
+
+#desabilitar erros
+if(!isDev()){
+    error_reporting( 0 );
+}
 ?>
