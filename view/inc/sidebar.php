@@ -8,7 +8,7 @@
         </li>
         <li>
             <a href="https://facebook.com/groups/hackergaucho">
-                <small>Grupo de notícias no</small><br>Facebook
+                <small>Grupo no</small><br>Facebook
             </a>
         </li>
         <li>
