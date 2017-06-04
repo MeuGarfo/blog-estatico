@@ -9,7 +9,13 @@
 <body>
     <?php view('inc/nav',['category'=>$category]); ?>
     <?php view('inc/logo'); ?>
-        <?php $categoryHTML=ucfirst($category); ?>
+    <?php
+    if($category=='ux'){
+        $categoryHTML=strtoupper($category);
+    }else{
+        $categoryHTML=ucfirst($category);
+    }
+    ?>
     <h1 id="title">
         <small><a class="gray" href="/<?php print $category; ?>"><?php print $categoryHTML; ?></a></small><br>
         <?php print @$title; ?>

@@ -13,6 +13,9 @@
                     $categories=categories();
                     foreach ($categories as $key=>$value) {
                         $html=ucfirst($value);
+                        if($html=='Ux'){
+                            $html=strtoupper($html);
+                        }
                         if($html<>"Blog"){
                             if($value==$category){
                                 print '<li class="active">';

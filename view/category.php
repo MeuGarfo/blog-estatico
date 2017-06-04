@@ -28,7 +28,7 @@
                     $posts[$key]['href']='/'.DEFAULT_CATEGORY.'/'.$posts[$key]['href'];
                 }
                 $posts[$key]['category']=$title;
-                $posts[$key]['filename']=$title.'/'.slug($value,false);
+                $posts[$key]['filename']=strtolower($title).'/'.slug($value,false);
             }
             foreach ($posts as $post) {
                 //print loop
